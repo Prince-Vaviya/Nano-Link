@@ -114,7 +114,7 @@ export default function Premium() {
                                     onChange={handleSlugChange}
                                     className={`w-full px-5 py-4 bg-black/50 border-2 ${validationError ? 'border-red-500' : 'border-gray-800'
                                         } rounded-xl text-white placeholder-gray-600 focus:outline-none focus:border-orange-400 transition-all font-mono text-sm`}
-                                    style={{ paddingLeft: `${window.location.origin.length * 8.6 + 50}px` }}
+                                    style={{ paddingLeft: `${window.location.origin.length * 9.5 + 55}px` }}
                                 />
                             </div>
                             {validationError && (

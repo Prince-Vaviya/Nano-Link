@@ -104,7 +104,7 @@ export default function Premium() {
                                 Custom slug (3-20 characters)
                             </label>
                             <div className="relative">
-                                <div className="absolute left-5 top-1/2 -translate-y-1/2 text-gray-500 font-mono text-sm">
+                                <div className="absolute left-5 top-1/2 -translate-y-1/2 text-gray-500 font-mono text-sm pointer-events-none">
                                     {window.location.origin}/
                                 </div>
                                 <input
@@ -112,11 +112,9 @@ export default function Premium() {
                                     type="text"
                                     value={customSlug}
                                     onChange={handleSlugChange}
-                                    onKeyPress={(e) => e.key === 'Enter' && handleCreate()}
-                                    placeholder="my-custom-link"
                                     className={`w-full px-5 py-4 bg-black/50 border-2 ${validationError ? 'border-red-500' : 'border-gray-800'
-                                        } rounded-xl text-white placeholder-gray-600 focus:outline-none focus:border-orange-400 transition-all`}
-                                    style={{ paddingLeft: `${window.location.origin.length * 7 + 30}px` }}
+                                        } rounded-xl text-white placeholder-gray-600 focus:outline-none focus:border-orange-400 transition-all font-mono text-sm`}
+                                    style={{ paddingLeft: `${window.location.origin.length * 8.6 + 50}px` }}
                                 />
                             </div>
                             {validationError && (
